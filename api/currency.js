@@ -1,7 +1,6 @@
-
 const axios = require('axios');
 
-export default async function handler(req, res) {
+module.exports = async function handler(req, res) {
   const apiKey = process.env.CURRENCY_API_KEY;
   const url = 'https://api.currencyapi.com/v3/latest';
 
@@ -16,4 +15,4 @@ export default async function handler(req, res) {
   } catch (error) {
     res.status(500).json({ error: 'Failed to fetch currency data' });
   }
-}
+};

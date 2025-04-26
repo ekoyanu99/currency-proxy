@@ -1,0 +1,12 @@
+{
+  "name": "currency-proxy",
+  "version": "1.0.0",
+  "description": "Vercel serverless proxy for CurrencyAPI",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "axios": "^1.6.8"
+  }
+}
